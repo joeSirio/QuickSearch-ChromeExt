@@ -1,0 +1,1 @@
+# QuickSearch-ChromeExt
