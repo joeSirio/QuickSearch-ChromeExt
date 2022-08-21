@@ -4,8 +4,38 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="SelectedText"></div>
-        <div id="Result"></div>
+        <div class="gqs-options">
+            <div class="gqs-hotkey-option">
+                <span class="gqs-hotkey-text">Hotkey: </span><br/><br/>
+                Control + <input id="GqsHotkeyInput" class="gqs-hotkey-input" type="text" minlength="1" maxlength="1" />
+                <hr/>
+                <button id="GqsHotkeyReset" class="gqs-reset-hotkey" style="">Reset To Default</button>
+            </div>
+        </div>
         <script src="popup.js"></script>
+        <style>
+            .gqs-hotkey-option{
+                width:150px;
+                text-align:center;
+                padding:5px;
+            }
+            .gqs-hotkey-text{
+                font-weight: bold;
+            }
+            .gqs-hotkey-input{
+                width:20px;
+                white-space: nowrap;
+                margin-bottom:5px;
+            }
+            .gqs-reset-hotkey{
+                width:100%;
+                margin:0;
+                cursor:pointer;
+                margin-top:5px;
+                background:#4285F4;
+                color:#FFF;
+                border-radius:5px;
+            }
+        </style>
     </body>
 </html>

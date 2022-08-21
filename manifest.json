@@ -1,7 +1,7 @@
 {
   "name": "Quick Search",
   "description": "Google search highlighted text",
-  "version": "0.1",
+  "version": "0.2",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"
@@ -15,11 +15,7 @@
     }
   ],
   "permissions": [
-    "storage",
-    "activeTab",
-    "scripting",
-    "notifications",
-    "tabs"
+    "storage"
   ],
   "host_permissions": [
     "http://*/*",
@@ -34,7 +30,6 @@
       "128": "/images/get_started128.png"
     }
   },
-  "options_page": "options.html",
   "icons": {
     "16": "/images/get_started16.png",
     "32": "/images/get_started32.png",
